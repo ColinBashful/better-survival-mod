@@ -1,0 +1,29 @@
+modLoader="javafml"
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="MIT"
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
+[[mods]]
+modId="bettersurvivalmod"
+version="${file.jarVersion}"
+displayName="Better Survival Mod"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/better-survival-mod-continued"
+logoFile="logo.png"
+credits="ColinBashful"
+authors="ColinBashful"
+description='''
+This mod adds additional enchantments and melee weapons to Minecraft.
+This puts more strategy to combat since certain weapons are better in certain situations.
+It also gives players much more possibilities how to enchant their items.
+'''
+[[dependencies.bettersurvivalmod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40,)"
+    side="BOTH"
+[[dependencies.bettersurvivalmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"

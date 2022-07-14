@@ -1,0 +1,41 @@
+{
+    "schemaVersion": 1,
+    "id": "bettersurvivalmod",
+    "version": "${version}",
+  
+    "name": "Better Survival Mod",
+    "description": '''This mod adds additional enchantments and melee weapons to Minecraft.
+This puts more strategy to combat since certain weapons are better in certain situations.
+It also gives players much more possibilities how to enchant their items.''',
+    "authors": [
+      "ColinBashful"
+    ],
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/better-survival-mod-continued",
+      "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+  
+    "license": "MIT",
+    "icon": "assets/bettersurvivalmod/icon.png",
+  
+    "environment": "*",
+    "entrypoints": {
+      "main": [
+        "com.colinbashful.bettersurvivalmod.ExampleMod"
+      ]
+    },
+    "mixins": [
+      "bettersurvivalmod.mixins.json"
+    ],
+  
+    "depends": {
+      "fabricloader": ">=0.14.8",
+      "fabric": "*",
+      "minecraft": "1.18.2",
+      "java": ">=17"
+    },
+    "suggests": {
+      "another-mod": "*"
+    }
+  }
+  
